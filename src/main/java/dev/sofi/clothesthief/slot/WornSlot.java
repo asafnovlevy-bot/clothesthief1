@@ -14,7 +14,7 @@ public class WornSlot extends Slot {
 	public WornSlot(Player owner, int x, int y) {
 		super(new WornContainer(owner), 0, x, y);
 		this.owner = owner;
-		this.setBackground(ClothesThief.id("container/slot/clothes"));
+		
 	}
 
 	@Override
