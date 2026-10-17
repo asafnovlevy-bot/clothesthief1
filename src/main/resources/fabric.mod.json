@@ -1,0 +1,24 @@
+{
+	"schemaVersion": 1,
+	"id": "clothesthief",
+	"version": "${version}",
+	"name": "Clothes Thief",
+	"description": "Take the clothes of players and villagers when you are naked, wear them from a dedicated clothing slot.",
+	"authors": ["Sofi"],
+	"license": "CC0-1.0",
+	"environment": "*",
+	"entrypoints": {
+		"main": ["dev.sofi.clothesthief.ClothesThief"],
+		"client": ["dev.sofi.clothesthief.client.ClothesThiefClient"]
+	},
+	"mixins": [
+		"clothesthief.mixins.json",
+		{ "config": "clothesthief.client.mixins.json", "environment": "client" }
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~26.3",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
